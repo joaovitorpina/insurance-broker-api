@@ -1,0 +1,31 @@
+[
+  {
+    "name": "Api",
+    "type": "mysql",
+    "host": "localhost",
+    "port": 3307,
+    "username": "root",
+    "password": "",
+    "database": "ApiHML",
+    "schema": "",
+    "synchronize": false,
+    "entities": ["./src/databases/db/entities/*.ts"],
+    "migrations": ["./src/databases/db/migrations/*.ts"],
+    "cli": {
+      "migrationsDir": "src/databases/db/migrations",
+      "entitiesDir": "src/databases/db/entities"
+    }
+  },
+  {
+    "name": "Admin",
+    "type": "mysql",
+    "host": "localhost",
+    "port": 3306,
+    "username": "root",
+    "password": "",
+    "database": "seguralta",
+    "schema": "",
+    "synchronize": false,
+    "entities": ["src/databases/admin/entities/*.ts"]
+  }
+]
